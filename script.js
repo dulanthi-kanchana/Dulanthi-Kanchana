@@ -139,3 +139,23 @@ function openLightbox(imgElement) {
 function closeLightbox() {
     document.getElementById('lightbox').style.display = 'none';
 }
+
+// Carousel Scroll Function (Arrow Clicks)
+function scrollCarousel(direction) {
+    const track = document.getElementById('photo-track');
+    // Scrolls by one photo width (320px) plus the gap (20px)
+    const scrollAmount = 340; 
+    track.scrollBy({ left: scrollAmount * direction, behavior: 'smooth' });
+}
+
+// Lightbox Functions
+function openLightbox(imgElement) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightbox.style.display = 'block';
+    lightboxImg.src = imgElement.src;
+}
+
+function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+}
