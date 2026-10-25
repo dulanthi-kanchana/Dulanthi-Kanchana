@@ -79,7 +79,7 @@
   </div>
   <div class="about-stats reveal">
     <div class="about-stat-item">
-      <div class="num" data-target="150">0</div>
+      <div class="num" data-target="160">0</div>
       <div class="label">Happy Clients</div>
     </div>
     <div class="about-stat-item">
@@ -177,6 +177,29 @@
       <div class="t-dot" data-idx="2"></div>
     </div>
   </div>
+</section>
+
+<!-- Activities -->
+<section id="social-activities" class="social-section">
+    <h2>Social Activities & Client Interactions</h2>
+    <div class="photo-grid">
+        <!-- Replace the src attributes with the actual paths to your photos -->
+        <div class="photo-item">
+            <img src="images/activity1.jpg" alt="Client interaction 1" onclick="openLightbox(this)">
+        </div>
+        <div class="photo-item">
+            <img src="images/activity2.jpg" alt="Client interaction 2" onclick="openLightbox(this)">
+        </div>
+        <div class="photo-item">
+            <img src="images/activity3.jpg" alt="Client interaction 3" onclick="openLightbox(this)">
+        </div>
+    </div>
+
+    <!-- Lightbox Modal for viewing larger images -->
+    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+        <span class="close-btn">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+    </div>
 </section>
 
 <!-- CONTACT -->
