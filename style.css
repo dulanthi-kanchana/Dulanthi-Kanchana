@@ -797,3 +797,85 @@
     footer { flex-direction: column; gap: 12px; text-align: center; padding: 28px; }
     .about-stats { grid-template-columns: 1fr 1fr; }
   }
+
+/* Social Activities Section */
+.social-section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #f9f9f9; /* Adjust to match your portfolio's background */
+}
+
+.social-section h2 {
+    margin-bottom: 40px;
+    font-size: 2.2em;
+    color: #333;
+}
+
+/* Photo Grid Layout */
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.photo-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+.photo-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.photo-item:hover img {
+    transform: scale(1.05);
+}
+
+/* Lightbox Background */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+}
+
+/* Lightbox Image */
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 8px;
+}
+
+/* Close Button */
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 40px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.close-btn:hover {
+    color: #ccc;
+}
